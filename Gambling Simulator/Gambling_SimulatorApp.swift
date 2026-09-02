@@ -1,17 +1,17 @@
 //
-//  Gambling_SimulatorApp.swift
-//  Gambling Simulator
+//  Gambling_simulatorApp.swift
+//  Gambling simulator
 //
-//  Created by Ricky   Yang on 2/9/26.
+//  Created by Rishi on 31/8/26.
 //
 
 import SwiftUI
 
 @main
-struct Gambling_SimulatorApp: App {
+struct Gambling_simulatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IntroView()
         }
     }
 }
