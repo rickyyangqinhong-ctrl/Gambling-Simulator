@@ -54,7 +54,7 @@ struct ContentView: View {
                                 return
                             }
                             Money -= gambleAmount
-                            let multiplier = Double.random(in: -1.0...3.0)
+                            let multiplier = Double.random(in: -1...5)
                             let change = (gambleAmount * multiplier).rounded(toPlaces: 2)
                             Money = (Money + change).rounded(toPlaces: 2)
                             let net = (change - gambleAmount).rounded(toPlaces: 2)
@@ -91,6 +91,12 @@ struct ContentView: View {
                 }
                 Tab("Slots", systemImage: "7.calendar"){
                     SlotsGM()
+                }
+                Tab("Prize Drop", systemImage: "app.gift"){
+                    PrizeDropGM()
+                }
+                Tab("Settings", systemImage: "gear"){
+                    Settings()
                 }
             }
             .padding()
