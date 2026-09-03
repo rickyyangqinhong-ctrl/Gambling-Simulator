@@ -11,9 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5B39F46A30457E2600AA69EF /* Gambling simulator */ = {
+		5B39F46A30457E2600AA69EF /* Gambling Simulator */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Gambling simulator";
+			path = "Gambling Simulator";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		5B39F45F30457E2600AA69EF = {
 			isa = PBXGroup;
 			children = (
-				5B39F46A30457E2600AA69EF /* Gambling simulator */,
+				5B39F46A30457E2600AA69EF /* Gambling Simulator */,
 				5B39F46930457E2600AA69EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5B39F46A30457E2600AA69EF /* Gambling simulator */,
+				5B39F46A30457E2600AA69EF /* Gambling Simulator */,
 			);
 			name = "Gambling simulator";
 			packageProductDependencies = (
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5B39F46330457E2600AA69EF /* Build configuration list for PBXProject "Gambling simulator" */;
+			buildConfigurationList = 5B39F46330457E2600AA69EF /* Build configuration list for PBXProject "Gambling Simulator" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -309,7 +309,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5B39F46330457E2600AA69EF /* Build configuration list for PBXProject "Gambling simulator" */ = {
+		5B39F46330457E2600AA69EF /* Build configuration list for PBXProject "Gambling Simulator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B39F47130457E2700AA69EF /* Debug */,
