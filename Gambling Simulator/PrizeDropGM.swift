@@ -40,16 +40,18 @@ struct PrizeDropGM: View {
             
             Spacer()
             
-            // THE FIX: Only show this button if the prize drop has NOT been revealed yet!
             if !isButtonVisible {
-                Button("Click to Reveal $100") {
-                    withAnimation(.spring()) {
-                        isButtonVisible = true
+                if Money < 100 {
+                } else {
+                    Button("Click to Reveal $100") {
+                        Money -= 100
+                        withAnimation(.spring()) {
+                            isButtonVisible = true
+                        }
                     }
-                    Money -= 100
+                    .font(.title2).bold()
+                    .buttonStyle(.borderedProminent)
                 }
-                .font(.title2).bold()
-                .buttonStyle(.borderedProminent)
             }
 
             if isButtonVisible {
