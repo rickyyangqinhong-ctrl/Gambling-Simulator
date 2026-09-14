@@ -10,7 +10,6 @@ import SwiftUI
 class Global {
     static let shared = Global()
     
-    // Store Money as a Double. Default is 0.0
     @AppStorage("global_Money_key") var Money: Double = 500.0
 }
 struct ContentView: View {

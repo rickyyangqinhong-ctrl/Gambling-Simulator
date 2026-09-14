@@ -67,7 +67,6 @@ struct PrizeDropGM: View {
                     }
 
                     if strikes == 4 {
-                        // FIX: Check the exact rank text BEFORE updating the layout string text
                         if rank == "Common" {
                             Money += 10
                             announce = "You received $10"
@@ -85,7 +84,6 @@ struct PrizeDropGM: View {
                             Money += 500
                         }
                         
-                        // Move this line right here after money calculation!
                         rank = "🎉 OPENED \(rank)!"
                         degrees = 0
                     }

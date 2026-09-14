@@ -16,23 +16,20 @@ struct YahtzeeGM: View {
     @State private var resultMessage2: String = "Roll to see your result!"
     @State private var resultMessage3: String = "Roll to see your result!"
     @State private var resultMessage4: String = "Roll to see your result!"
-    // 🛠️ PASTE THIS FUNCTION INSIDE YOUR YAHTZEEGM STRUCT
     func calculateScore(for category: String) -> Int {
         let hand = [dice1, dice2, dice3, dice4, dice5].sorted()
         
         switch category {
             
         case "TwoOfAKind":
-            // Checks if any two adjacent dice match in our sorted hand
             if (hand[0] == hand[1]) || (hand[1] == hand[2]) || (hand[2] == hand[3]) || (hand[3] == hand[4]) {
-                return hand.reduce(0, +) // Adds up all dice for an easy reward!
+                return hand.reduce(0, +)
             }
             return 0
             
         case "ThreeOfAKind":
-            // Checks if any three adjacent dice match in our sorted hand
             if (hand[0] == hand[2]) || (hand[1] == hand[3]) || (hand[2] == hand[4]) {
-                return hand.reduce(0, +) // Adds up all dice
+                return hand.reduce(0, +) 
             }
             return 0
             

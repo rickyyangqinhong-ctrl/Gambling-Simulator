@@ -74,7 +74,6 @@ struct SlotsGM: View {
                             rollCount += 1
                             
                             withAnimation(.linear(duration: 0.08)) {
-                                // --- ROLL REEL 1 ---
                                 slot1num = Int.random(in: 0...6)
                                 if slot1num == 0 { slot1 = "🍒" }
                                 else if slot1num == 1 { slot1 = "🍒" }
@@ -84,7 +83,6 @@ struct SlotsGM: View {
                                 else if slot1num == 5 { slot1 = "💎" }
                                 else if slot1num == 6 { slot1 = "7️⃣" }
                                 
-                                // --- ROLL REEL 2 ---
                                 slot2num = Int.random(in: 0...6)
                                 if slot2num == 0 { slot2 = "🍒" }
                                 else if slot2num == 1 { slot2 = "🍒" }
@@ -94,7 +92,6 @@ struct SlotsGM: View {
                                 else if slot2num == 5 { slot2 = "💎" }
                                 else if slot2num == 6 { slot2 = "7️⃣" }
                                 
-                                // --- ROLL REEL 3 ---
                                 slot3num = Int.random(in: 0...6)
                                 if slot3num == 0 { slot3 = "🍒" }
                                 else if slot3num == 1 { slot3 = "🍒" }
@@ -108,7 +105,6 @@ struct SlotsGM: View {
                             if rollCount >= totalRolls {
                                 timer.invalidate()
                                 
-                                // --- CALCULATE WIN CONDITIONS ---
                                 calculatePayout()
                             }
                         }
@@ -118,7 +114,6 @@ struct SlotsGM: View {
                 .background(Color.red)
                 .cornerRadius(20)
                 Button(" Reset Balance ") {
-                    // Simply change Money directly. It updates everywhere instantly!
                     Money = 500.0
                 }
                 .foregroundColor(.yellow)
