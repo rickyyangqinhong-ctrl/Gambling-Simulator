@@ -1,1 +1,1 @@
-Our app
+This is a gambling app.
