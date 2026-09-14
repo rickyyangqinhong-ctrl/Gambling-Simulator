@@ -4,5 +4,5 @@ The most useless app for you to stimulate the thrill of gambling without any mon
 
 Features:
 Nothing
-> other than 
+> other than prizedrop, slots and yahtzee. And dice roll...of course
 
